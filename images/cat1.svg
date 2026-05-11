@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="370" height="250" viewBox="0 0 370 250">
+  <rect width="370" height="250" fill="#7f8c8d"/>
+  <line x1="0" y1="0" x2="370" y2="250" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <line x1="370" y1="0" x2="0" y2="250" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <rect x="1" y="1" width="368" height="248" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.4"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#ffffff" opacity="0.7">Верхняя одежда</text>
+</svg>

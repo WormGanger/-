@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#1a252f"/>
+  <line x1="0" y1="0" x2="800" y2="500" stroke="#ecf0f1" stroke-width="2" opacity="0.3"/>
+  <line x1="800" y1="0" x2="0" y2="500" stroke="#ecf0f1" stroke-width="2" opacity="0.3"/>
+  <rect x="1" y="1" width="798" height="498" fill="none" stroke="#ecf0f1" stroke-width="2" opacity="0.4"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#ecf0f1" opacity="0.7">Слайд 3</text>
+</svg>

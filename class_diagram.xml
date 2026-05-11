@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ===== Page (abstract) ===== -->
+    <mxCell id="10" value="«abstract»&#xa;Page" style="swimlane;fontStyle=1;align=center;startSize=45;container=1;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="480" y="30" width="220" height="140" as="geometry" />
+    </mxCell>
+    <mxCell id="11" value="- title : String&#xa;- path : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;fontSize=12;" vertex="1" parent="10">
+      <mxGeometry y="45" width="220" height="45" as="geometry" />
+    </mxCell>
+    <mxCell id="12" value="" style="line;strokeColor=#000000;fillColor=none;" vertex="1" parent="10">
+      <mxGeometry y="90" width="220" height="10" as="geometry" />
+    </mxCell>
+    <mxCell id="13" value="+ render() : void&#xa;+ navigate() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;fontSize=12;" vertex="1" parent="10">
+      <mxGeometry y="95" width="220" height="45" as="geometry" />
+    </mxCell>
+
+    <!-- ===== ScriptController ===== -->
+    <mxCell id="20" value="ScriptController" style="swimlane;fontStyle=1;align=center;startSize=35;container=1;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="30" y="280" width="240" height="140" as="geometry" />
+    </mxCell>
+    <mxCell id="21" value="- hamburgerpopupslider : HTMLElement" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="20">
+      <mxGeometry y="35" width="240" height="35" as="geometry" />
+    </mxCell>
+    <mxCell id="22" value="" style="line;strokeColor=#000000;fillColor=none;" vertex="1" parent="20">
+      <mxGeometry y="70" width="240" height="10" as="geometry" />
+    </mxCell>
+    <mxCell id="23" value="+ toggleMenu() : void&#xa;+ mountSlider() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;fontSize=12;" vertex="1" parent="20">
+      <mxGeometry y="75" width="240" height="65" as="geometry" />
+    </mxCell>
+
+    <!-- ===== HomePage ===== -->
+    <mxCell id="30" value="HomePage" style="swimlane;fontStyle=1;align=center;startSize=35;container=1;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="30" y="530" width="210" height="130" as="geometry" />
+    </mxCell>
+    <mxCell id="31" value="- heroSlider : Slider&#xa;- categories : Array" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;fontSize=12;" vertex="1" parent="30">
+      <mxGeometry y="35" width="210" height="45" as="geometry" />
+    </mxCell>
+    <mxCell id="32" value="" style="line;strokeColor=#000000;fillColor=none;" vertex="1" parent="30">
+      <mxGeometry y="80" width="210" height="10" as="geometry" />
+    </mxCell>
+    <mxCell id="33" value="+ showPopup() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;fontSize=12;" vertex="1" parent="30">
+      <mxGeometry y="85" width="210" height="45" as="geometry" />
+    </mxCell>
+
+    <!-- ===== CatalogPage ===== -->
+    <mxCell id="40" value="CatalogPage" style="swimlane;fontStyle=1;align=center;startSize=35;container=1;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="265" y="530" width="210" height="130" as="geometry" />
+    </mxCell>
+    <mxCell id="41" value="- products : Array&#xa;- sorting : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;fontSize=12;" vertex="1" parent="40">
+      <mxGeometry y="35" width="210" height="45" as="geometry" />
+    </mxCell>
+    <mxCell id="42" value="" style="line;strokeColor=#000000;fillColor=none;" vertex="1" parent="40">
+      <mxGeometry y="80" width="210" height="10" as="geometry" />
+    </mxCell>
+    <mxCell id="43" value="+ filterProducts() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;fontSize=12;" vertex="1" parent="40">
+      <mxGeometry y="85" width="210" height="45" as="geometry" />
+    </mxCell>
+
+    <!-- ===== ProductDetailsPage ===== -->
+    <mxCell id="50" value="ProductDetailsPage" style="swimlane;fontStyle=1;align=center;startSize=35;container=1;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="495" y="530" width="220" height="130" as="geometry" />
+    </mxCell>
+    <mxCell id="51" value="- product : Object&#xa;- quantity : Number" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;fontSize=12;" vertex="1" parent="50">
+      <mxGeometry y="35" width="220" height="45" as="geometry" />
+    </mxCell>
+    <mxCell id="52" value="" style="line;strokeColor=#000000;fillColor=none;" vertex="1" parent="50">
+      <mxGeometry y="80" width="220" height="10" as="geometry" />
+    </mxCell>
+    <mxCell id="53" value="+ zoomImage() : void&#xa;+ addToCart() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;fontSize=12;" vertex="1" parent="50">
+      <mxGeometry y="85" width="220" height="45" as="geometry" />
+    </mxCell>
+
+    <!-- ===== CartPage ===== -->
+    <mxCell id="60" value="CartPage" style="swimlane;fontStyle=1;align=center;startSize=35;container=1;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="740" y="530" width="210" height="130" as="geometry" />
+    </mxCell>
+    <mxCell id="61" value="- items : Array&#xa;- total : Number" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;fontSize=12;" vertex="1" parent="60">
+      <mxGeometry y="35" width="210" height="45" as="geometry" />
+    </mxCell>
+    <mxCell id="62" value="" style="line;strokeColor=#000000;fillColor=none;" vertex="1" parent="60">
+      <mxGeometry y="80" width="210" height="10" as="geometry" />
+    </mxCell>
+    <mxCell id="63" value="+ changeQuantity() : void&#xa;+ removeItem() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;fontSize=12;" vertex="1" parent="60">
+      <mxGeometry y="85" width="210" height="45" as="geometry" />
+    </mxCell>
+
+    <!-- ===== AuthPage ===== -->
+    <mxCell id="70" value="AuthPage" style="swimlane;fontStyle=1;align=center;startSize=35;container=1;collapsible=0;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="970" y="530" width="210" height="130" as="geometry" />
+    </mxCell>
+    <mxCell id="71" value="- email : String&#xa;- password : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;fontSize=12;" vertex="1" parent="70">
+      <mxGeometry y="35" width="210" height="45" as="geometry" />
+    </mxCell>
+    <mxCell id="72" value="" style="line;strokeColor=#000000;fillColor=none;" vertex="1" parent="70">
+      <mxGeometry y="80" width="210" height="10" as="geometry" />
+    </mxCell>
+    <mxCell id="73" value="+ validateForm() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;rotatable=0;fontSize=12;" vertex="1" parent="70">
+      <mxGeometry y="85" width="210" height="45" as="geometry" />
+    </mxCell>
+
+    <!--
+    =============================================================
+    НАСЛЕДОВАНИЕ (обобщение): сплошная линия + ПУСТОЙ треугольник
+    Стрелка идёт от подкласса к суперклассу (Page).
+
+    Координаты (bottom Page = y=170, center-x=590):
+      Точки входа в нижнюю грань Page:
+        entryX=0.1 → x=502   (HomePage)
+        entryX=0.3 → x=546   (CatalogPage)
+        entryX=0.5 → x=590   (ProductDetailsPage)
+        entryX=0.7 → x=634   (CartPage)
+        entryX=0.9 → x=678   (AuthPage)
+
+    Шина A (y=470): CatalogPage [370→546] и CartPage [845→634] — не пересекаются
+    Шина B (y=490): HomePage [135→502] и AuthPage [1075→678] — не пересекаются
+    ProductDetailsPage: прямо вверх
+    =============================================================
+    -->
+
+    <!-- HomePage → Page -->
+    <mxCell id="80" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.1;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;strokeColor=#000000;strokeWidth=1.5;" edge="1" parent="1" source="30" target="10">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="135" y="490" />
+          <mxPoint x="502" y="490" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- CatalogPage → Page -->
+    <mxCell id="81" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.3;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;strokeColor=#000000;strokeWidth=1.5;" edge="1" parent="1" source="40" target="10">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="370" y="470" />
+          <mxPoint x="546" y="470" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- ProductDetailsPage → Page (прямо вверх) -->
+    <mxCell id="82" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;strokeColor=#000000;strokeWidth=1.5;" edge="1" parent="1" source="50" target="10">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- CartPage → Page -->
+    <mxCell id="83" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.7;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;strokeColor=#000000;strokeWidth=1.5;" edge="1" parent="1" source="60" target="10">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="845" y="470" />
+          <mxPoint x="634" y="470" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- AuthPage → Page -->
+    <mxCell id="84" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.9;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;strokeColor=#000000;strokeWidth=1.5;" edge="1" parent="1" source="70" target="10">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1075" y="490" />
+          <mxPoint x="678" y="490" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!--
+    =============================================================
+    АССОЦИАЦИИ ScriptController → HomePage / CatalogPage
+    Сплошная линия + ЗАПОЛНЕННЫЙ треугольник (как в примере)
+    С кратностью: 1 к 1
+
+    ScriptController → HomePage:
+      Маршрут: (150,420)→(150,440)→(72,440)→(72,530)
+      Входит в HomePage сверху с отступом (entryX=0.2), чтобы не совпасть
+      с точкой выхода стрелки наследования (center top)
+
+    ScriptController → CatalogPage:
+      Маршрут: (270,350)→(475,350)→(475,460)→(328,460)→(328,530)
+      Горизонталь y=460 — выше шин наследования (y=470/490) ✓
+    =============================================================
+    -->
+
+    <!-- ScriptController → HomePage (ассоциация: управляет, 1→1) -->
+    <mxCell id="85" value="управляет" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.2;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1.5;fontSize=11;fontStyle=2;align=left;" edge="1" parent="1" source="20" target="30">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint as="sourcePoint" x="150" y="440" />
+        <Array as="points">
+          <mxPoint x="150" y="440" />
+          <mxPoint x="72" y="440" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- Кратность управляет: 1 у ScriptController -->
+    <mxCell id="85a" value="1" style="resizable=0;html=1;align=left;verticalAlign=bottom;labelBackgroundColor=none;fontSize=12;" connectable="0" vertex="1" parent="85">
+      <mxGeometry x="-0.8" y="-10" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+    </mxCell>
+    <!-- Кратность управляет: 1 у HomePage -->
+    <mxCell id="85b" value="1" style="resizable=0;html=1;align=right;verticalAlign=top;labelBackgroundColor=none;fontSize=12;" connectable="0" vertex="1" parent="85">
+      <mxGeometry x="0.8" y="-10" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+    </mxCell>
+
+    <!-- ScriptController → CatalogPage (ассоциация: дополняет, 1→1) -->
+    <mxCell id="86" value="дополняет" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1.5;fontSize=11;fontStyle=2;" edge="1" parent="1" source="20" target="40">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="475" y="350" />
+          <mxPoint x="475" y="460" />
+          <mxPoint x="328" y="460" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- Кратность дополняет: 1 у ScriptController -->
+    <mxCell id="86a" value="1" style="resizable=0;html=1;align=left;verticalAlign=bottom;labelBackgroundColor=none;fontSize=12;" connectable="0" vertex="1" parent="86">
+      <mxGeometry x="-0.8" y="-10" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+    </mxCell>
+    <!-- Кратность дополняет: 1 у CatalogPage -->
+    <mxCell id="86b" value="1" style="resizable=0;html=1;align=right;verticalAlign=top;labelBackgroundColor=none;fontSize=12;" connectable="0" vertex="1" parent="86">
+      <mxGeometry x="0.8" y="-10" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry>
+    </mxCell>
+
+  </root>
+</mxGraphModel>
